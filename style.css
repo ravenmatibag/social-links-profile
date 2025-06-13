@@ -1,0 +1,144 @@
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root{
+     /* Breakpoints */
+    --mobile: 375px;
+    --desktop: 1440px;
+
+    /* Colors */
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+     /* Font weights */
+    --weight-light: 400;
+    --weight-medium: 600;
+    --weight-bold: 700;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background: var(--white);
+   font-family: 'Inter', sans-serif;
+   font-size: 0.875rem;  
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    background: var(--grey-900);
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 18.75rem;
+    padding: 2rem;
+    background: var(--grey-800);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.profile-description{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.profile-image{
+    width: 4.5rem;        
+    height: 4.5rem;       
+    border-radius: 50%;   
+    object-fit: cover; 
+}
+
+.name{
+    color: var(--white);
+    font-weight: var(--weight-bold);
+    font-size: 1rem;
+}
+
+.place{
+    color: var(--green);
+    font-weight: var(--weight-medium);
+    font-size: 0.5625rem;
+}
+
+
+.description{
+    color: var(--white);
+    font-weight: var(--weight-light);
+    text-align: center;
+    font-size: 0.625rem;
+}
+
+.social-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    font-weight: var(--weight-medium);
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.social-list li{
+   background-color: var(--grey-700);
+   padding: 0.45rem 0.75rem;
+   width: 100%;
+   text-align: center;
+   display: block;
+   border-radius: 0.43rem;
+   cursor: pointer;
+   transition: color 0.2s;
+   font-size: 0.625rem;
+}
+
+.social-list li:hover{
+    background-color: var(--green);
+    color: var(--grey-900);
+}
+
+.social-list li:focus {
+    outline: 2px solid var(--green);
+    outline-offset: 2px;
+}
+
+.social-list li a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+.social-list li:hover a {
+    color: var(--grey-700);
+}
+
+.social-list li a:focus {
+    outline: 2px solid var(--grey-700);
+    outline-offset: 2px;
+}
+
+
+
+
